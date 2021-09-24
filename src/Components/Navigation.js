@@ -12,16 +12,19 @@ const Navigation = () => {
 
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/home" activeClassName="active-class" >Home</NavLink>
+                    <NavLink to="/" activeClassName="active-class" exact >Home</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/about" activeClassName="active-class" >About</NavLink>
                 </li>
                 <li className="nav-item">
+                    <NavLink to="/resume" activeClassName="active-class" >Resume</NavLink>
+                </li>
+                <li className="nav-item">
                     <NavLink to="/projects" activeClassName="active-class" >Projects</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/blog" activeClassName="active-class" >Blog</NavLink>
+                    <NavLink to="/blogs" activeClassName="active-class" >Blog</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/contact" activeClassName="active-class" >Contact</NavLink>
@@ -65,8 +68,7 @@ const NavigationStyled = styled.nav`
             display: block;
             a{
                 display: block;
-                ${'' /* padding: .45rem 0; */}
-                padding: .2rem 0;
+                padding: .45rem 0;
                 position: relative;
                 z-index: 10;
                 text-transform: uppercase;

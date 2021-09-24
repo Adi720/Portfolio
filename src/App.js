@@ -1,7 +1,13 @@
 import React from 'react'
+import { Route, Switch } from 'react-router'
 import styled from 'styled-components'
 import Sidebar from './Components/Sidebar'
 import HomePage from './Pages/HomePage'
+import AboutPage from './Pages/AboutPage'
+import ResumePage from './Pages/ResumePage'
+import ProjectsPage from './Pages/ProjectsPage'
+import BlogsPage from './Pages/BlogsPage'
+import ContactPage from './Pages/ContactPage'
 const App = () => {
   return (
     <div className="App">
@@ -15,7 +21,26 @@ const App = () => {
           <div className="line-4"></div>
         </div>
 
-        <HomePage />
+        <Switch>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/about" exact>
+            <AboutPage />
+          </Route>
+          <Route path="/resume" exact>
+            <ResumePage />
+          </Route>
+          <Route path="/projects" exact>
+            <ProjectsPage />
+          </Route>
+          <Route path="/blogs" exact>
+            <BlogsPage />
+          </Route>
+          <Route path="/contact" exact>
+            <ContactPage />
+          </Route>
+        </Switch>
       </MainContentStyled>
     </div>
   )
@@ -46,26 +71,3 @@ const MainContentStyled = styled.main`
 
 export default App
 
-// import styled from "styled-components";
-// import Sidebar from "./Components/Sidebar";
-// function App() {
-//   return (
-//     <div className="App">
-//       <Sidebar />
-
-//       <MainContentStyled>
-
-//       </MainContentStyled>
-
-//     </div>
-//   )
-// }
-
-// const MainContentStyled = styled.main`
-//   position: relative;
-//   margin-left: 16.3rem;
-//   min-height: 100vh;
-//   background-color: red;
-// `
-
-// export default App;

@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
 }
 
 body{
@@ -40,6 +41,18 @@ a{
     color: inherit;
     font-size: inherit;
     font-size: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white-color);
+    span{
+        font-size: 4rem;
+    }
+}
+
+span{
+    color: var(--primary-color);
 }
 
 `;

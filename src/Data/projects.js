@@ -32,7 +32,7 @@ const projects = [
     },
     {
         id: 4,
-        category: 'Web Development',
+        category: 'Animation',
         image: img2,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',

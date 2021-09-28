@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 body{
@@ -59,6 +59,12 @@ h6{
     font-size: 1.2rem;
     padding-bottom: .6rem;
 }
+
+
+.u-margin-bottom {
+    margin-bottom: 4rem;
+}
+
 `;
 
 export default GlobalStyle;

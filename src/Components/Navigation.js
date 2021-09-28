@@ -102,7 +102,7 @@ const NavigationStyled = styled.nav`
         width: 100%;
         p{
             padding: 1.3rem 0;
-            font-size: 1.1rem;
+            font-size: 1rem;
             display: block;
             text-align: center;
         }

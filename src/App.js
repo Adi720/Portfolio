@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router'
+import { Route, Switch as Switching } from 'react-router'
 import styled from 'styled-components'
 import Sidebar from './Components/Sidebar'
 import HomePage from './Pages/HomePage'
@@ -8,11 +8,29 @@ import ResumePage from './Pages/ResumePage'
 import ProjectsPage from './Pages/ProjectsPage'
 import BlogsPage from './Pages/BlogsPage'
 import ContactPage from './Pages/ContactPage'
+import { Brightness4 } from '@material-ui/icons'
+import { Switch } from '@material-ui/core'
 const App = () => {
   return (
     <div className="App">
       <Sidebar />
+      <div className="theme">
+        <div className="light-dark-mode">
+          <div className="left-content">
+            <Brightness4 />
+          </div>
 
+          <div className="right-content">
+            <Switch
+              value=""
+              // checked={}
+              // onChange={}
+              inputProps={{ "aria-label": '' }}
+              size="medium"
+            />
+          </div>
+        </div>
+      </div>
       <MainContentStyled>
         <div className="lines">
           <div className="line-1"></div>
@@ -21,7 +39,9 @@ const App = () => {
           <div className="line-4"></div>
         </div>
 
-        <Switch>
+
+
+        <Switching>
           <Route path="/" exact>
             <HomePage />
           </Route>
@@ -40,7 +60,7 @@ const App = () => {
           <Route path="/contact" exact>
             <ContactPage />
           </Route>
-        </Switch>
+        </Switching>
       </MainContentStyled>
     </div>
   )

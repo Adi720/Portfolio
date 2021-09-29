@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { GitHub } from '@material-ui/icons'
-import { Pinterest } from '@material-ui/icons'
+import { Link } from '@material-ui/icons';
 
 const Menu = ({ menuItems }) => {
     return (
@@ -21,7 +21,7 @@ const Menu = ({ menuItems }) => {
                                         </li>
                                         <li>
                                             <a href={item.link2}>
-                                                <Pinterest />
+                                                <Link />
                                             </a>
                                         </li>
                                     </ul>

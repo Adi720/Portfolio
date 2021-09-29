@@ -41,6 +41,7 @@ const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative;
+
     .wave{
         animation-name: wave-animation;
         animation-duration: 2.1s; 

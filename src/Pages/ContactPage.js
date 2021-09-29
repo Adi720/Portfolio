@@ -37,7 +37,7 @@ const ContactPage = () => {
                                 <label htmlFor="text-area">Enter your Message</label>
                                 <textarea type="textarea" id="textarea" cols="30" rows="10" />
                             </div>
-                            <div className="form-field">
+                            <div className="form-field f-button">
                                 <PrimaryButton title={"Send Email"} />
                             </div>
                         </form>

@@ -8,12 +8,15 @@ import ResumePage from './Pages/ResumePage'
 import ProjectsPage from './Pages/ProjectsPage'
 import BlogsPage from './Pages/BlogsPage'
 import ContactPage from './Pages/ContactPage'
-import { Brightness4 } from '@material-ui/icons'
+import { Brightness4, Menu } from '@material-ui/icons'
 import { Switch } from '@material-ui/core'
+import { IconButton } from '@material-ui/core'
 const App = () => {
 
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
+
   useEffect(() => {
     document.documentElement.className = theme;
   }, [theme])
@@ -30,7 +33,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar navToggle={navToggle} />
       <div className="theme">
         <div className="light-dark-mode">
           <div className="left-content">
@@ -47,6 +50,12 @@ const App = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="ham-burger-menu">
+        <IconButton onClick={() => setNavToggle(!navToggle)}>
+          <Menu />
+        </IconButton>
       </div>
       <MainContentStyled>
         <div className="lines">

@@ -5,16 +5,17 @@ import { LinkedIn } from '@material-ui/icons';
 import GithubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Type from "../Components/Type";
+import Particle from "../Components/Particle"
 
 const HomePage = () => {
     return (
         <HomePageStyled>
             <div className="p-particle-js">
-                {/* <Particle /> */}
+                <Particle />
             </div>
             <div className="typography">
                 {/* <h1>Hi, There! <span>Aditya More</span></h1> */}
-                <h1>Hi, There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span> <br /> <span>I'm ADITYA MORE</span></h1>
+                <h1>Hey, there! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span> <br /> <span>I'm ADITYA MORE</span></h1>
                 <p>
                     <Type />
                 </p>

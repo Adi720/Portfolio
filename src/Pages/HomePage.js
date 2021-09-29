@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import React from 'react'
-import FacebookIcon from '@material-ui/icons/Facebook';
+import Email from '@material-ui/icons/Email';
+import { LinkedIn } from '@material-ui/icons';
 import GithubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import Type from "../Components/Type";
 
 const HomePage = () => {
     return (
@@ -11,15 +13,17 @@ const HomePage = () => {
                 {/* <Particle /> */}
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Aditya More</span></h1>
+                {/* <h1>Hi, There! <span>Aditya More</span></h1> */}
+                <h1>Hi, There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span> <br /> <span>I'm ADITYA MORE</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque nihil voluptates ea dolore vel
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    <Type />
                 </p>
                 <div className="icons">
-                    <a href="https://codepen.io/pen/" className="icon i-facebook">
-                        <FacebookIcon />
+                    <a href="mailto:adityamore360123@gmail.com" className="icon i-mail">
+                        <Email />
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-more-a76b251b0/" className="icon i-linkedin">
+                        <LinkedIn />
                     </a>
                     <a href="https://github.com/Adi720" className="icon i-github">
                         <GithubIcon />
@@ -37,6 +41,40 @@ const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative;
+    .wave{
+        animation-name: wave-animation;
+        animation-duration: 2.1s; 
+        animation-iteration-count: infinite; 
+        transform-origin: 70% 70%; 
+        display: inline-block;
+    }
+
+    @keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    } 
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+    }
     .typography{
         position: absolute;
         top: 50%;
@@ -67,16 +105,25 @@ const HomePageStyled = styled.header`
                     margin: .5rem;
                 }
             }
+            .i-mail{
+                &:hover{
+                    color: #04669A;
+                }
+            }
+            .i-linkedin{
+                &:hover{
+                    color: #04669A;
+                }
+            }
             .i-instagram{
                 &:hover{
-                    border: 2px solid red;
-                    color: red;
+                    ${'' /* border: 2px solid red; */}
+                    color: #2C6A93;
                 }
             }
             .i-github{
                 &:hover{
-                    border: 2px solid #5F4687;
-                    color: #5F4687;
+                    color: #04669A;
                 }
             }
         }

@@ -1,22 +1,30 @@
 import React from "react";
+import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 
 function Type() {
     return (
-        <Typewriter
-            options={{
-                strings: [
-                    "Developer",
-                    "Deep Learning Engineer",
-                    "MERN Stack Developer",
-                    "Open Source Contributor",
-                ],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 50,
-            }}
-        />
+        <TypewriterStyled>
+            <Typewriter
+                options={{
+                    strings: [
+                        "Developer",
+                        "Machine Learning Enthusiast",
+                        "MERN Stack Developer",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+
+                }}
+            />
+        </TypewriterStyled>
     );
 }
+
+const TypewriterStyled = styled.div`
+    font-size: 1rem;
+    color: orange;
+`;
 
 export default Type;

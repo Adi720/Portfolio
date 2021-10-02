@@ -171,6 +171,14 @@ h6{
     }
 }
 
+@media screen and (max-width: 1200px){
+    .light-dark-mode{
+        top: 15%;
+        height: 2.2rem;
+        width: 5.5rem;
+    }
+}
+
 /* Global Media Queries */
 
 

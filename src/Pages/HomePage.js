@@ -16,6 +16,7 @@ const HomePage = () => {
             <div className="typography">
                 {/* <h1>Hi, There! <span>Aditya More</span></h1> */}
                 <h1>Hey, there! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span> <br /> <span>I'm ADITYA MORE</span></h1>
+                <br />
                 <p>
                     <Type />
                 </p>
@@ -84,6 +85,7 @@ const HomePageStyled = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         width: 80%;
+
         .icons{
             display: flex;
             justify-content: center;
@@ -128,6 +130,16 @@ const HomePageStyled = styled.header`
                     color: #04669A;
                 }
             }
+        }
+    }
+    @media screen and (max-width:670px){
+        .typography{
+            h1{
+            font-size: 2rem;
+            }
+            span{
+            font-size: 1.8rem;
+            }     
         }
     }
 

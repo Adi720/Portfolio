@@ -51,7 +51,7 @@ function Particle() {
                             value: 4,
                             random: true,
                             anim: {
-                                speed: 40,
+                                speed: 20,
                                 size_min: 0.1
                             }
                         },

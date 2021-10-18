@@ -45,7 +45,7 @@ const Resume = () => {
                         year={'2019 - 2023'}
                         title={'AISSMS Institue Of Information Technology'}
                         subtitle={'Pune University'}
-                        text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vitae autem, nam quaerat asperiores quasi nulla pariatur vero omnis, exercitationem cumque! Amet voluptatem nisi repudiandae, sint natus assumenda voluptas nemo.'}
+                        text={''}
 
                     />
                     {/* <ResumeItem
